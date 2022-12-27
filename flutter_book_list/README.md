@@ -1,7 +1,9 @@
 # flutter_book_list
 
 UI작성하기 : ListView.builder
+
 화면이동 & 데이터 전달
+
 데이터영역과 UI 영역 분리
 
 ## 프로젝트 구성

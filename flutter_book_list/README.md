@@ -1,16 +1,28 @@
 # flutter_book_list
 
-A new Flutter project.
+UI작성하기 : ListView.builder
+화면이동 & 데이터 전달
+데이터영역과 UI 영역 분리
 
-## Getting Started
+## 프로젝트 구성
+- main
+  lib/main.dart
 
-This project is a starting point for a Flutter application.
+  [home 화면 지정]
+  home: ListScreen()
 
-A few resources to get you started if this is your first Flutter project:
+- 화면
+  lib/screens/list_screen.dart
+  lib/screens/detail_screen.dart
+  
+  [화면이동]
+  Navigator.of(context).push());
+  
+  [화면 범위를 컨텐츠가 넘어설때 buffer overflow 에러 조치]
+  width: MediaQuery.of(context).size.width * 0.8,
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- 데이터
+  lib/model/book.dart
+  lib/repositories/book_repository.dart
+ 
+[실행화면](https://dabbyp.github.io/api_samples/flutter_book_list/build/web/)
